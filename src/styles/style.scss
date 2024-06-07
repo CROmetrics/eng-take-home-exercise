@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+body {
+  padding: 3rem 6rem;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2rem;
+  justify-content: center;
+
+  & > div {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3rem;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 76.25rem;
+}
+
+blockquote,
+code {
+  font-family: 'Fira Mono', monospace !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+code {
+  font-size: 0.875rem !important;
+}
+
+blockquote {
+  border-left: 2px solid silver;
+  margin: 0.625rem 0;
+  padding-left: 0.625rem;
+}
+
+pre {
+  border-radius: 0.3rem;
+  display: flex;
+  flex-grow: 0;
+  overflow: auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+#problem,
+#solution {
+  border: 1px dashed black;
+  margin-top: 0.625rem;
+  padding: 0.625rem;
+}
+
+#special-offer {
+  border: 1px solid black;
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+
+.disabled {
+  color: gray;
+  text-decoration: underline;
+}
+
+#problem4 {
+  #solution {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    pre {
+      width: calc(100% - 2em);
+    }
+  }
+
+  [data-color='red'] {
+    background-color: red;
+  }
+
+  [data-color='blue'] {
+    background-color: blue;
+  }
+
+  [data-color='green'] {
+    background-color: green;
+  }
+
+  [data-color='orange'] {
+    background-color: orange;
+  }
+
+  [data-color='purple'] {
+    background-color: purple;
+  }
+}
+
+#problem5 {
+  .url {
+    text-decoration: underline;
+  }
+
+  strong {
+    &.good {
+      color: green;
+    }
+
+    &.bad {
+      color: red;
+    }
+  }
+
+  #test-urls {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+
+    @media (min-width: 80.3125em) {
+      justify-content: space-between;
+    }
+
+    pre {
+      max-width: 535px;
+      width: unset;
+    }
+
+    & > div {
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      /* align-items: flex-start; */
+      max-width: calc(50% - 1rem);
+      min-width: 32.75rem;
+      width: calc(50% - 1rem);
+    }
+  }
+}

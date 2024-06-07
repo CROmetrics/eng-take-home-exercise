@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="./problem4.html">&larr; Previous problem</a>
+        <a href="../index.html">&#9776; Menu</a>
+        <a href="./problem6.html">Next problem &rarr;</a>
+      </div>
+    </header>
+    <main id="problem5">
+      <div id="description">
+        <h1>Problem 5:</h1>
+        <p>
+          Our client, <span class="url">bacondelivery.com</span>, is launching a test on all product
+          pages.
+        </p>
+
+        <p>
+          Write the function <code class="language-typescript">window.testUrl(url)</code> that
+          evaluates its URL param using a regex expression, and returns either
+          <code class="language-typescript">true</code> or
+          <code class="language-typescript">false</code> depending on if the regex matches the
+          provided url.
+        </p>
+        <p>
+          The regex should match the first three <code class="language-scss">goodURLS</code> and
+          <strong>not match</strong> the following four <code class="language-scss">badURLS</code>.
+        </p>
+      </div>
+      <div id="test-urls">
+        <div>
+          <h3>Good URLs</h3>
+          <pre>
+            <code class="language-typescript" data-left-trim data-remove-indent data-right-trim>
+              const good = [
+                'www.bacondelivery.com/weekly-bacon-delivery/',
+                'www.bacondelivery.com/daily-bacon-delivery/',
+                'www.bacondelivery.com/bacon-of-the-month-club/',
+              ];
+            </code>
+          </pre>
+        </div>
+        <div>
+          <h3>Bad URLs</h3>
+          <pre>
+            <code class="language-typescript" data-left-trim data-remove-indent data-right-trim>
+              const bad = [
+                'www.bacondelivery.com/',
+                'www.bacondelivery.com/?some_param',
+                'www.bacondelivery.com/about/',
+                'www.bacondelivery.com/contact-us/',
+              ];
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div>
+        <h3>Solution:</h3>
+        <div id="solution">
+          <ul class="js-urls"></ul>
+        </div>
+      </div>
+      <script type="module" src="../app.ts"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+    </main>
+  </body>
+</html>
