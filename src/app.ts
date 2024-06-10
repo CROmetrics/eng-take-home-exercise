@@ -3,8 +3,8 @@ async function load() {
 
   if (pathname === '/html/problem1.html') {
     try {
-      const solutionJs = await import('./solutions/solution1.js');
-      solutionJs.solution1();
+      const { solution1 } = await import('./solutions/solution1.js');
+      solution1();
     } catch (e) {
       console.error(e);
     } finally {
@@ -17,8 +17,8 @@ async function load() {
 
   if (pathname === '/html/problem2.html') {
     try {
-      const solutionJs = await import('./solutions/solution2.js');
-      solutionJs.solution2();
+      const { solution2 } = await import('./solutions/solution2.js');
+      solution2();
     } catch (e) {
       console.error(e);
     } finally {
@@ -30,8 +30,8 @@ async function load() {
 
   if (pathname === '/html/problem3.html') {
     try {
-      const solutionJs = await import('./solutions/solution3.js');
-      solutionJs.solution3();
+      const { solution3 } = await import('./solutions/solution3.js');
+      solution3();
     } catch (e) {
       console.error(e);
     } finally {
@@ -46,8 +46,8 @@ async function load() {
       const { initProblem4 } = await import('./config/initProblem4.js');
       initProblem4();
 
-      const solutionJs = await import('./solutions/solution4.js');
-      solutionJs.solution4();
+      const { solution4 } = await import('./solutions/solution4.js');
+      solution4();
     } catch (e) {
       console.error(e);
     }
@@ -56,8 +56,8 @@ async function load() {
 
   if (pathname === '/html/problem5.html') {
     try {
-      const solutionJs = await import('./solutions/solution5.js');
-      solutionJs.solution5();
+      const { solution5 } = await import('./solutions/solution5.js');
+      solution5();
     } catch (e) {
       console.error(e);
     } finally {
