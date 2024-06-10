@@ -8,8 +8,8 @@
     "start": "parcel",
     "build": "parcel build"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Cro Metrics Engineering",
+  "license": "MIT",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0",
