@@ -15,9 +15,11 @@
    ![Devbox setup](images/setup.png)
 
 After the Devbox is setup, CodeSandbox should automatically start the dev server, and inform you `Port 1234 has been opened` with the option to "Open Preview". Click "Open Preview" to view the project hosted on the dev server.
+
 ![Devbox Preview](images/open-preview.png)
 
 If the dev server is not automatically started by CodeSandbox, you can start it manually by running `npm run start` in the terminal and then clicking "Open Preview" once the server has been started.
+
 ![Starting Dev Server in Devbox](images/start-dev-server.png)
 
 ## Getting Started
@@ -34,9 +36,12 @@ If you believe there is an error or something is broken, please reach out to you
 
 Once finished, please follow the steps below to submit your work:
 
-1. Click "Share" ![CodeSandbox Share Button](images/share.png)
-2. Change visibility to "**Unlisted**", select a folder where you want to move the unlisted Devbox ("All folders" is fine), and click "Move Devbox" ![Change visibility and move](images/visibility-and-move.png)
-3. Copy the "Share URL" for the unlisted Devbox ![Copy the unlisted Devbox's "Share URL"](images/copy-share-url.png)
+1. Click "Share"
+   ![CodeSandbox Share Button](images/share.png)
+2. Change visibility to "**Unlisted**", select a folder where you want to move the unlisted Devbox ("All folders" is fine), and click "Move Devbox"
+   ![Change visibility and move](images/visibility-and-move.png)
+3. Copy the "Share URL" for the unlisted Devbox
+   ![Copy the unlisted Devbox's "Share URL"](images/copy-share-url.png)
 4. Refresh/reload the page to ensure the changes are saved.
 5. Send the copied "Share URL" for your unlisted Devbox to your hiring manager at Cro Metrics.
 
