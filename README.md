@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Open [https://githubbox.com/CROmetrics/take-home-exercise](https://githubbox.com/CROmetrics/take-home-exercise)
+1. Open [https://githubbox.com/CROmetrics/eng-take-home-exercise](https://githubbox.com/CROmetrics/eng-take-home-exercise)
 2. If necessary, sign into CodeSandbox
    ![CodeSandbox Sign In](images/sign-in.png)
 3. Click "Fork"
