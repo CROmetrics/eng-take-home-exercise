@@ -1,10 +1,10 @@
-const goodURLS = [
+const goodUrls = [
   'www.bacondelivery.com/weekly-bacon-delivery/',
   'www.bacondelivery.com/daily-bacon-delivery/',
   'www.bacondelivery.com/bacon-of-the-month-club/',
 ];
 
-const badURLS = [
+const badUrls = [
   'www.bacondelivery.com/',
   'www.bacondelivery.com/?some_param',
   'www.bacondelivery.com/about/',
@@ -14,7 +14,7 @@ const badURLS = [
 export const initProblem5 = () => {
   const urlList = document.querySelector('.js-urls');
 
-  for (const url of [...goodURLS, ...badURLS]) {
+  for (const url of [...goodUrls, ...badUrls]) {
     const isGood = window.testUrl(url);
     const label = isGood ? 'good' : 'bad' || 'unknown';
     const item = document.createElement('li');
