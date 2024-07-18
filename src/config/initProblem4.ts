@@ -19,6 +19,14 @@ export const initProblem4 = () => {
     }
   };
 
-  changeColor();
-  setInterval(changeColor, 1000);
+  const changeColorAtRandomInterval = () => {
+    const interval = Math.floor(Math.random() * 2001 + 1000);
+
+    setTimeout(() => {
+      changeColor();
+      changeColorAtRandomInterval();
+    }, interval);
+  };
+
+  changeColorAtRandomInterval();
 };
